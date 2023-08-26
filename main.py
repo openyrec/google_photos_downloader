@@ -1,3 +1,4 @@
+#!/usr/bin/python3.7
 import os
 import io
 import pickle
@@ -10,10 +11,10 @@ from googleapiclient.http import MediaIoBaseDownload
 
 # Variables
 SCOPES = ["https://www.googleapis.com/auth/photoslibrary.readonly"]
-CLIENT_SECRET_FILE = "client_secret.json"
-TOKEN_PICKLE_FILE = "token.pickle"
-DESTINATION_FOLDER = "/Users/ykudriav/Downloads/test3"
-MAX_FILES = 200
+CLIENT_SECRET_FILE = "/home/qleon/GIT/google_photos_downloader/client_secret.json"
+TOKEN_PICKLE_FILE = "/home/qleon/GIT/google_photos_downloader/token.pickle"
+DESTINATION_FOLDER = "/mnt/hdd4TB/OPEN/Photo/Photo_years/"
+MAX_FILES = 120
 
 
 def authenticate():
